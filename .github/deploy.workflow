@@ -1,11 +1,17 @@
 workflow "Deploy to GitHub Pages" {
   on = "push"
-  resolves = ["Install Dependencies"]
+  resolves = ["Master Branch"]
+}
+
+action "Master Branch" {
+  uses = "actions/bin/filter@master"
+  args = "branch master"
 }
 
 action "Install Dependencies" {
   uses = "actions/npm@master"
   args = "ci"
+  needs = ["Master Branch"]
 }
 
 action "Build Frontend" {
@@ -13,14 +19,3 @@ action "Build Frontend" {
   args = "run build"
   needs = ["Install Dependencies"]
 }
-
-action "Master Branch" {
-  uses = "actions/bin/filter@master"
-  args = "branch master"
-  needs = ["Build Frontend"]
-}
-
-# action "Deploy to GitHub Pages" {
-#   uses = "maxheld83/ghpages@master"
-#   needs = ["Master Branch"]
-# }
