@@ -1,6 +1,6 @@
-workflow "Deployment" {
+workflow "Deploy to GitHub Pages" {
   on = "push"
-  resolves = ["Deploy to GitHub Pages"]
+  resolves = ["Install Dependencies"]
 }
 
 action "Install Dependencies" {
