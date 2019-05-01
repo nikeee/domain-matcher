@@ -1,6 +1,6 @@
 workflow "Deploy to GitHub Pages" {
   on = "push"
-  resolves = ["Master Branch"]
+  resolves = ["Build Site"]
 }
 
 action "Master Branch" {
@@ -9,13 +9,13 @@ action "Master Branch" {
 }
 
 action "Install Dependencies" {
-  uses = "actions/npm@master"
-  args = "ci"
+  uses = "actions/npm@59b64a598378f31e49cb76f27d6f3312b582f680"
   needs = ["Master Branch"]
+  args = "ci"
 }
 
-action "Build Frontend" {
-  uses = "actions/npm@master"
-  args = "run build"
+action "Build Site" {
+  uses = "actions/npm@59b64a598378f31e49cb76f27d6f3312b582f680"
   needs = ["Install Dependencies"]
+  args = "run build"
 }
