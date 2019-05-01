@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/domain-matcher/static/css/main.584f321a.chunk.css",
+    "main.js": "/domain-matcher/static/js/main.0f99362a.chunk.js",
+    "main.js.map": "/domain-matcher/static/js/main.0f99362a.chunk.js.map",
+    "runtime~main.js": "/domain-matcher/static/js/runtime~main.1b7c6f10.js",
+    "runtime~main.js.map": "/domain-matcher/static/js/runtime~main.1b7c6f10.js.map",
+    "static/css/2.22a7d4ef.chunk.css": "/domain-matcher/static/css/2.22a7d4ef.chunk.css",
+    "static/js/2.585b4444.chunk.js": "/domain-matcher/static/js/2.585b4444.chunk.js",
+    "static/js/2.585b4444.chunk.js.map": "/domain-matcher/static/js/2.585b4444.chunk.js.map",
+    "index.html": "/domain-matcher/index.html",
+    "precache-manifest.b5dd4b9b93c778df46ee88df76d6261a.js": "/domain-matcher/precache-manifest.b5dd4b9b93c778df46ee88df76d6261a.js",
+    "service-worker.js": "/domain-matcher/service-worker.js",
+    "static/css/2.22a7d4ef.chunk.css.map": "/domain-matcher/static/css/2.22a7d4ef.chunk.css.map",
+    "static/css/main.584f321a.chunk.css.map": "/domain-matcher/static/css/main.584f321a.chunk.css.map"
+  }
+}
